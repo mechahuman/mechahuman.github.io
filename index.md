@@ -31,7 +31,7 @@ Here are a few projects I’ve worked on:
 - ####  Verilog Traffic Light Controller with Interrupt
   (https://github.com/ManthanSecond/Verilog-AmbulanceInterrupt-TrafficLightController)
   
-> This was a collaborative project with my friend [Manthan Sadekar](github.com/ManthanSecond). It has the concepts of Computer Architecture and Digital Electronics and it uses Verilog to design a traffic light controller that manages a four-way intersection with intelligent emergency handling.
+> This was a collaborative project with my friend [Manthan Sadekar](https://github.com/ManthanSecond). It has the concepts of Computer Architecture and Digital Electronics and it uses Verilog to design a traffic light controller that manages a four-way intersection with intelligent emergency handling.
 
 
 ---
