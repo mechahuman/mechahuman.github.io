@@ -18,7 +18,7 @@ Here are some tools and languages that i have worked with:
 
 Here are a few projects I’ve worked on:
 
-- ###  [Swimming Website](https://github.com/mechahuman.github.io/Swimming-Website)
+- ###  [Swimming Website](https://mechahuman.github.io/Swimming-Website/)
   
 > AquaPulse Swim Club is a dynamic, visually striking website designed for modern aquatic enthusiasts. Featuring smooth GSAP animations, an interactive cursor, and bold typography, it showcases swimming programs, events, and club culture. Inspired by Sheryians CodingSchool’s tutorial, this template blends style and functionality for sports or wellness brands.
 
