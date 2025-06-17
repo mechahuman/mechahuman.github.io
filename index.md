@@ -18,13 +18,13 @@ Here are some tools and languages that i have worked with:
 
 Here are a few projects I’ve worked on:
 
-### 🔗 [Project Name](https://github.com/your-username/project-repo)
-> A short one-sentence description of what this project does.
+- ####  Swimming Website  (https://github.com/mechahuman/Swimming-Website)
+ > 
+- ####  Full Stack Bubble Game (https://github.com/mechahuman/Full-Stack---Bubble-Game)
+ >
+- ####  Verilog Traffic Light Controller with Interrupt (https://github.com/ManthanSecond/Verilog-AmbulanceInterrupt-TrafficLightController)
+ > This was a collaborative project with my friend [Manthan Sadekar](github.com/ManthanSecond). It has the concepts of Computer Architecture and Digital Electronics and it uses Verilog to design a traffic light controller that manages a four-way intersection with intelligent emergency handling.
 
-### 🔗 [Another Project](https://github.com/your-username/another-project)
-> Another brief project description, highlighting tech or purpose.
-
-> 👉 [See all my repositories](https://github.com/your-username)
 
 ---
 
