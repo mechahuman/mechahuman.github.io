@@ -18,6 +18,10 @@ Here are some tools and languages that i have worked with:
 
 Here are a few projects I’ve worked on:
 
+- ###  [Smart File Organizer](https://mechahuman.github.io/Smart-Image-Organizer/)
+
+> This is a dynamic project about how the pictures are sorted according to the face of the person. The first picture is taken as reference and the folder is traversed through and all the pictures that match the face are moved to a different folder automatically. If the face is not recognized in the picture the choice to move it is given to the user.
+
 - ###  [Swimming Website](https://mechahuman.github.io/Swimming-Website/)
   
 > AquaPulse Swim Club is a dynamic, visually striking website designed for modern aquatic enthusiasts. Featuring smooth GSAP animations, an interactive cursor, and bold typography, it showcases swimming programs, events, and club culture. Inspired by Sheryians CodingSchool’s tutorial, this template blends style and functionality for sports or wellness brands.
@@ -30,9 +34,6 @@ Here are a few projects I’ve worked on:
   
 > This was a collaborative project with my friend [Manthan Sadekar](https://github.com/ManthanSecond). It has the concepts of Computer Architecture and Digital Electronics and it uses Verilog to design a traffic light controller that manages a four-way intersection with intelligent emergency handling.
 
-- ###  [Smart File Organizer](https://mechahuman.github.io/Smart-Image-Organizer/)
-
-> This is a dynamic project about how the pictures are sorted according to the face of the person. The first picture is taken as reference and the folder is traversed through and all the pictures that match the face are moved to a different folder automatically. If the face is not recognized in the picture the choice to move it is given to the user.
 
 ---
 
