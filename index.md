@@ -10,7 +10,7 @@ Welcome to my GitHub portfolio! I'm a Computer Science undergraduate student in 
 Here are some tools and languages that i have worked with:
 
 -  Languages: `JavaScript`, `Python`, `Java`, `HTML`, `CSS`, `MYSQL`
--  Tools: `OpenCV`, `VS Code`, `SpringBoot`, `Bootstrap`, `TailwindCSS`, `Node.js`
+-  Tools: `OpenCV`, `FaceRecognition`, `VS Code`, `SpringBoot`, `Bootstrap`, `TailwindCSS`, `Node.js`
 
 ---
 
