@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Manav Bhavsar | GitHub Portfolio</title>
-  <meta name="description" content="Manav Bhavsar - Computer Science undergrad at Nirma University. Projects in data science, machine learning, computer vision, and web development." />
+  <meta name="description" content="Manav Bhavsar - Computer Science undergraduate at Nirma University. Projects in data science, machine learning, computer vision, and web development." />
+
   <style>
     :root{
       --max-width: 1100px;
@@ -20,367 +21,282 @@
     * { box-sizing: border-box; }
 
     body {
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
       max-width: var(--max-width);
       margin: 32px auto;
       padding: 0 18px;
       line-height: 1.6;
       color: var(--text);
       background: #fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
     }
 
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    hr { border: none; border-top: 1px solid #e6e9ee; margin: 28px 0; }
+
+    h1 { font-size: 1.9rem; margin-bottom: 6px; }
+    h2 { font-size: 1.25rem; margin-bottom: 10px; }
+    h3 { font-size: 1rem; margin: 0 0 8px 0; }
+
+    /* ---------- HEADER ---------- */
     .header-container {
       display: grid;
       grid-template-columns: 1fr 220px;
       gap: 24px;
       align-items: start;
-      margin-bottom: 26px;
-    }
-
-    .about-text h1 {
-      margin: 0 0 6px 0;
-      font-size: 1.9rem;
-      letter-spacing: -0.5px;
+      margin-bottom: 28px;
     }
 
     .about-text p {
-      margin: 0;
       color: #374151;
+      margin: 0;
     }
 
-    .profile-pic {
-      display:flex;
-      justify-content:center;
-      align-items:flex-start;
+    .resume-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .resume-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
     }
 
     .profile-pic img {
       width: 180px;
-      max-width: 100%;
-      height: auto;
       border-radius: 50%;
       box-shadow: var(--shadow);
-      display:block;
-      object-fit:cover;
     }
 
-    hr { border: none; border-top: 1px solid #e6e9ee; margin: 26px 0; }
-
-    h2 { color: var(--text); margin-bottom: 8px; font-size: 1.2rem; }
-    h3 { margin: 0 0 8px 0; font-size: 1rem; }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover, a:focus { text-decoration: underline; }
-
-    code {
-      background: #f3f4f6;
-      padding: 2px 6px;
-      border-radius: 6px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-      font-size: 0.92rem;
-    }
-
-    blockquote {
-      border-left: 4px solid #e6e9ee;
-      padding: 12px 16px;
-      margin: 10px 0 18px 0;
-      color: #444;
-      background: #fbfbfc;
-      border-radius: 8px;
-    }
-
-    ul { margin: 8px 0; padding-left: 20px; }
-
+    /* ---------- TOOLS ---------- */
     .tools {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      align-items: start;
-      margin-bottom: 6px;
+      gap: 14px;
     }
-    .tools li { list-style: disc; margin-left: 16px; }
 
-    .project-controls {
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      align-items:center;
-      margin-bottom:12px;
+    code {
+      background: #f3f4f6;
+      padding: 3px 6px;
+      border-radius: 6px;
+      font-size: 0.9rem;
     }
-    .project-controls .btn {
-      border: 1px solid #e6e9ee;
-      background: #fff;
-      padding: 8px 12px;
-      border-radius: 999px;
-      cursor: pointer;
-      font-weight:600;
-      font-size:0.92rem;
-      color: var(--muted);
-      transition: background .12s, color .12s, border-color .12s, transform .08s;
-    }
-    .project-controls .btn:hover { transform: translateY(-2px); }
-    .project-controls .btn[aria-pressed="true"] {
-      background: #000000;
-      color: #fff;
-      border-color: rgba(0, 0, 0, 0.9);
-      box-shadow: 0 6px 18px rgba(3,102,214,0.12);
-    }
-    .project-controls .hint { color:var(--muted); font-weight:400; font-size:0.92rem; margin-left:6px; }
 
+    /* ---------- LABMENTIX ---------- */
+    .labmentix-box {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      margin: 14px 0 22px 0;
+    }
+
+    .labmentix-scroll {
+      max-height: 180px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .labmentix-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #e6e9ee;
+    }
+
+    .labmentix-item:last-child {
+      border-bottom: none;
+    }
+
+    .labmentix-item a {
+      font-weight: 600;
+    }
+
+    .labmentix-item p {
+      margin: 4px 0 0 0;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    /* ---------- PROJECTS ---------- */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
-      margin-top: 8px;
+      margin-top: 10px;
     }
+
     .project-card {
       background: var(--card-bg);
       border-radius: 12px;
       padding: 14px;
       box-shadow: var(--shadow);
-      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
-      display:flex;
-      flex-direction:column;
-      min-height: 110px;
+      transition: transform .15s ease;
     }
-    .project-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(16,24,40,0.12); }
-    .project-title { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; }
-    .project-title a { font-weight:600; color: var(--text); }
-    .project-desc { color: #374151; font-size: 0.95rem; margin-top:6px; flex:1 1 auto; }
-    .project-meta { margin-top:12px; font-size: 0.88rem; color: var(--muted); }
 
-    .category {
-      margin-top: 18px;
+    .project-card:hover {
+      transform: translateY(-5px);
     }
-    .category h2 { display:flex; align-items:center; gap:10px; }
 
-    .hidden { display:none !important; opacity:0; transform: scale(.995); }
-
-    .last-updated { color: var(--muted); font-style: italic; margin-top: 18px; font-size: 0.92rem; }
-
-    @media (max-width: 1024px) {
-      :root { --max-width: 920px; }
-      .header-container { grid-template-columns: 1fr 200px; gap:20px; }
+    .project-desc {
+      font-size: 0.95rem;
+      color: #374151;
     }
+
+    .project-meta {
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
     @media (max-width: 768px) {
-      :root { --max-width: 740px; }
-      .header-container { grid-template-columns: 1fr; text-align: center; align-items: center; }
-      .about-text { order: 1; }
-      .profile-pic { order: 2; margin-top: 6px; }
-      .profile-pic img { width:140px; }
-      .tools { grid-template-columns: 1fr; }
+      .header-container { grid-template-columns: 1fr; text-align: center; }
       .projects-grid { grid-template-columns: 1fr; }
-      .project-card { padding: 12px; }
-      .about-text p { text-align: justify; }
+      .tools { grid-template-columns: 1fr; }
+      .profile-pic img { width: 140px; }
     }
-    @media (max-width: 480px) {
-      :root { --max-width: 430px; --gutter: 14px; }
-      body { margin: 18px auto; padding: 0 12px; }
-      .about-text h1 { font-size: 1.5rem; }
-      .profile-pic img { width:120px; }
-      .project-card { padding: 10px; border-radius:10px; }
-      blockquote { padding: 10px 12px; }
-    }
-
-    .btn:focus { outline: 3px solid rgba(3,102,214,0.15); outline-offset: 3px; }
-    a:focus { outline: 3px solid rgba(3,102,214,0.12); outline-offset: 3px; }
   </style>
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <div class="header-container">
     <div class="about-text">
-      <h1>Manav Bhavsar</h1>
+      <h1>Manav Samir Bhavsar</h1>
       <p>
-        Welcome to my GitHub portfolio! I'm a Computer Science undergraduate student at <strong>Nirma University</strong>, Ahmedabad.
-        I'm passionate about creating meaningful projects and working on real-world problems. Currently exploring <strong>data science</strong> and
-        <strong>machine learning</strong>, and deepening my skills across these areas.
+        Welcome to my GitHub portfolio. I’m a Computer Science undergraduate at Nirma University, Ahmedabad, passionate about developing real-world, problem-driven projects. My current focus lies in data science and machine learning, where I actively build and explore intelligent systems through practical implementation.
       </p>
-      <p style="padding-top: 20px;">
-        <a href="assets/Resume.pdf">Resume</a>
-      </p>
-      
+
+      <a href="Resume .pdf" class="resume-btn" download>
+        Download My Resume
+      </a>
     </div>
 
-    <div class="profile-pic" aria-hidden="false">
+    <div class="profile-pic">
       <img src="assets/profile-pic.jpg" alt="Profile picture of Manav Bhavsar">
     </div>
   </div>
 
   <hr />
 
-  <section class="section">
+  <!-- TOOLS & TECHNOLOGIES -->
+  <section>
     <h2>Tools & Technologies</h2>
-    <p>Here are some tools and languages that I have worked with:</p>
-    <ul class="tools" aria-label="Tools and technologies">
-      <li>
-        <strong>Languages:</strong><br />
-        <code>JavaScript</code>, <code>Python</code>, <code>Java</code>, <code>C</code>, <code>HTML</code>, <code>CSS</code>, <code>MySQL</code>
-      </li>
-      <li>
-        <strong>Frameworks / Tools:</strong><br />
-        <code>OpenCV</code>, <code>face_recognition</code>, <code>VS Code</code>, <code>Spring Boot</code>, <code>Bootstrap</code>, <code>TailwindCSS</code>, <code>Node.js</code>,<code>LLMs-Ollama</code>,<code>n8n</code>,
-      </li>
-    </ul>
+    <div class="tools">
+      <div>
+        <strong>Languages</strong><br />
+        <code>Python</code> <code>JavaScript</code> <code>Java</code> <code>C</code> <code>HTML</code> <code>CSS</code> <code>MySQL</code>
+      </div>
+      <div>
+        <strong>Frameworks / Tools</strong><br />
+        <code>LangChain</code> <code>ChromaDB</code> <code>Ollama</code> <code>OpenCV</code> <code>Flask</code>
+        <code>Bootstrap</code> <code>TailwindCSS</code> <code>n8n</code> <code>Git</code>
+      </div>
+    </div>
   </section>
 
   <hr />
 
-  <section class="section" id="projects">
+  <!-- PROJECTS -->
+  <section>
     <h2>Projects</h2>
 
-    <div class="project-controls" role="tablist" aria-label="Project categories">
-      <button class="btn" data-filter="all" aria-pressed="true">All</button>
-      <button class="btn" data-filter="ai" aria-pressed="false">Workflow, AI &amp; Machine Learning</button>
-      <button class="btn" data-filter="web" aria-pressed="false">Web Development</button>
-      <button class="btn" data-filter="other" aria-pressed="false">Other</button>
-    </div>
+    <!-- LABMENTIX -->
+    <div class="labmentix-box">
+      <h3>Labmentix Internship Projects</h3>
+      <div class="labmentix-scroll">
 
-    <div class="category" data-category="ai">
-      <h2>Workflow, AI &amp; Machine Learning</h2>
-      <div class="projects-grid">
-        <article class="project-card" data-tags="ai">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Automated-News-to-Mail-Workflow/" target="_blank" rel="noopener">News to Email - n8n Workflow</a></h3>
-          </div>
-          <p class="project-desc">
-           Automated daily news digest built with n8n — runs at 8:00 AM, pulls headlines from ESPN, TechCrunch, and Times of India, extracts the top 3 stories per source, and compiles them into a single, formatted email. Implemented using n8n nodes (Schedule trigger, RSS, Merge + Code for parsing/formatting, Gmail OAuth2) and provided as an importable workflow. Ready-to-run automation for staying updated or integrating into larger notification pipelines.
-          </p>
-          <div class="project-meta">Technologies: n8n, JSON</div>
-        </article>
+        <div class="labmentix-item">
+          <a href="https://github.com/mechahuman/Tesla-Stock-Price-Prediction-Analysis" target="_blank">Tesla Stock Price Prediction</a>
+          <p>Time-series ML models for forecasting stock trends.</p>
+        </div>
 
-        <article class="project-card" data-tags="ai">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Biometric-Authentication/" target="_blank" rel="noopener">Biometric Authentication</a></h3>
-          </div>
-          <p class="project-desc">
-            A complete facial recognition system to securely launch desktop applications using a webcam. Captures face data,
-            trains a recognition model, and authenticates in real-time. Built in modular Python scripts for offline authentication.
-          </p>
-          <div class="project-meta">Technologies: Python, OpenCV, face_recognition</div>
-        </article>
+        <div class="labmentix-item">
+          <a href="https://github.com/mechahuman/Agentic-AI-Travel-Planner" target="_blank">Agentic AI Travel Planner</a>
+          <p>Agent-based AI system for intelligent itinerary generation.</p>
+        </div>
 
-        <article class="project-card" data-tags="ai">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Smart-Image-Organizer/" target="_blank" rel="noopener">Smart File Organizer</a></h3>
-          </div>
-          <p class="project-desc">
-            Organizes photos by matching faces. The first image is used as reference and the folder is traversed to automatically move matching images;
-            unrecognized faces prompt a user decision.
-          </p>
-          <div class="project-meta">Technologies: Python, OpenCV</div>
-        </article>
+        <div class="labmentix-item">
+          <a href="https://github.com/mechahuman/Real-Estate-Advisor" target="_blank">Real Estate Advisor</a>
+          <p>ML-powered advisory system for property analysis.</p>
+        </div>
 
-        <article class="project-card" data-tags="ai">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Food-Review-AI-Chatbot-/" target="_blank" rel="noopener">Food Review AI Chatbot</a></h3>
-          </div>
-          <p class="project-desc">
-            A conversational AI chatbot designed to analyze and discuss food reviews intelligently. It uses <strong>LangChain</strong> with <strong>ChromaDB</strong> for semantic retrieval and manages local LLM and embedding models through <strong>Ollama</strong>. The system processes food review data, vectorizes it for contextual understanding, and enables users to chat naturally to get summaries, insights, or sentiment-driven responses about dishes and restaurants.
-          </p>
-          <div class="project-meta">Technologies: Flask, LangChain, ChromaDB, Ollama</div>
-        </article>
+        <div class="labmentix-item">
+          <a href="https://github.com/mechahuman/Netflix-TV-Shows-Movies-Clustering-and-Recommender-System" target="_blank">Netflix Recommender System</a>
+          <p>Clustering-based movie & TV recommendation engine.</p>
+        </div>
 
-        <article class="project-card" data-tags="ai">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Automobile-Data-Analysis/" target="_blank" rel="noopener">Automobile-Data-Analysis</a></h3>
-          </div>
-          <p class="project-desc">
-            Automobile Data Analysis explores a classic dataset of cars (1970–1982) to uncover trends in fuel efficiency, horsepower, weight, and acceleration. The project combines exploratory data analysis with a K-Nearest Neighbors regression model to predict car acceleration based on key vehicle attributes.
-          </p>
-          <div class="project-meta">Technologies: Scikit-learn, Matplotlib, Pandas</div>
-        </article>
+        <div class="labmentix-item">
+          <a href="https://github.com/mechahuman/EMI-Predicting-System" target="_blank">EMI Predicting System</a>
+          <p>Predictive modeling system for estimating loan EMIs.</p>
+        </div>
+
       </div>
     </div>
 
-    <div class="category" data-category="web">
-      <h2>Web Development</h2>
-      <div class="projects-grid">
-        <article class="project-card" data-tags="web">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Swimming-Website/" target="_blank" rel="noopener">Swimming Website</a></h3>
-          </div>
-          <p class="project-desc">
-            AquaPulse Swim Club — a visually striking website built with animated interactions (GSAP), a custom cursor, and bold typography to showcase programs and events.
-          </p>
-          <div class="project-meta">Technologies: HTML, CSS, JavaScript, GSAP</div>
-        </article>
+    <!-- PERSONAL PROJECTS -->
+    <div class="projects-grid">
 
-        <article class="project-card" data-tags="web">
-          <div class="project-title">
-            <h3><a href="https://mechahuman.github.io/Full-Stack---Bubble-Game/" target="_blank" rel="noopener">Full Stack Bubble Game</a></h3>
-          </div>
-          <p class="project-desc">
-            Bubble Pop — a fast-paced web game with animated bubbles, real-time scoring, a leaderboard, and persistent storage powered by a Flask backend and MongoDB.
-          </p>
-          <div class="project-meta">Technologies: HTML5, JavaScript, Flask, MongoDB</div>
-        </article>
-      </div>
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Automated-News-to-Mail-Workflow/" target="_blank">News to Email – n8n Workflow</a></h3>
+        <p class="project-desc">Automated daily news digest using n8n with scheduled triggers and formatted email delivery.</p>
+        <div class="project-meta">n8n · JSON</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Biometric-Authentication/" target="_blank">Biometric Authentication</a></h3>
+        <p class="project-desc">Facial recognition system to securely launch desktop applications using a webcam.</p>
+        <div class="project-meta">Python · OpenCV</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Smart-Image-Organizer/" target="_blank">Smart Image Organizer</a></h3>
+        <p class="project-desc">Automated photo organization by matching reference faces.</p>
+        <div class="project-meta">Python · OpenCV</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Food-Review-AI-Chatbot-/" target="_blank">Food Review AI Chatbot</a></h3>
+        <p class="project-desc">LLM-powered chatbot using LangChain, ChromaDB, and Ollama for semantic review analysis.</p>
+        <div class="project-meta">Flask · LangChain · ChromaDB · Ollama</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Automobile-Data-Analysis/" target="_blank">Automobile Data Analysis</a></h3>
+        <p class="project-desc">Exploratory data analysis and KNN regression to predict vehicle acceleration.</p>
+        <div class="project-meta">Scikit-learn · Pandas · Matplotlib</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Swimming-Website/" target="_blank">Swimming Website</a></h3>
+        <p class="project-desc">Animated swim club website with GSAP interactions.</p>
+        <div class="project-meta">HTML · CSS · JavaScript</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://mechahuman.github.io/Full-Stack---Bubble-Game/" target="_blank">Bubble Pop Game</a></h3>
+        <p class="project-desc">Fast-paced web game with real-time scoring and persistence.</p>
+        <div class="project-meta">Flask · MongoDB · JavaScript</div>
+      </article>
+
+      <article class="project-card">
+        <h3><a href="https://manthansecond.github.io/Verilog-AmbulanceInterrupt-TrafficLightController/" target="_blank">Verilog Traffic Light Controller</a></h3>
+        <p class="project-desc">4-way traffic light controller with emergency vehicle interrupt handling.</p>
+        <div class="project-meta">Verilog · Digital Design</div>
+      </article>
+
     </div>
-
-    <div class="category" data-category="other">
-      <h2>Other</h2>
-      <div class="projects-grid">
-        <article class="project-card" data-tags="other">
-          <div class="project-title">
-            <h3><a href="https://manthansecond.github.io/Verilog-AmbulanceInterrupt-TrafficLightController/" target="_blank" rel="noopener">Verilog Traffic Light Controller</a></h3>
-          </div>
-          <p class="project-desc">
-            Collaborative Verilog project with <a href="https://github.com/ManthanSecond" target="_blank" rel="noopener">Manthan Sadekar</a>.
-            A traffic light controller for a 4-way intersection with emergency vehicle interrupt handling.
-          </p>
-          <div class="project-meta">Technologies: Verilog, Digital Design</div>
-        </article>
-      </div>
-    </div>
-
   </section>
 
   <hr />
-  <p class="last-updated"><em>Last Updated on 4th October 2025</em></p>
-
-  <script>
-    (function(){
-      const buttons = document.querySelectorAll('.project-controls .btn');
-      const categories = document.querySelectorAll('.category');
-
-      function setActive(filter) {
-        buttons.forEach(b => {
-          const isActive = b.getAttribute('data-filter') === filter;
-          b.setAttribute('aria-pressed', String(isActive));
-        });
-
-        categories.forEach(cat => {
-          const key = cat.getAttribute('data-category');
-          if (filter === 'all' || filter === key) {
-            cat.classList.remove('hidden');
-          } else {
-            cat.classList.add('hidden');
-          }
-        });
-
-        const firstVisible = document.querySelector('.category:not(.hidden) .project-card a');
-        if (firstVisible) firstVisible.focus();
-      }
-
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          setActive(btn.getAttribute('data-filter'));
-        });
-
-        btn.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            btn.click();
-          }
-        });
-      });
-
-      setActive('all');
-    })();
-  </script>
+  <p style="color:#6b7280;font-style:italic;">Last updated: October 2025</p>
 
 </body>
 </html>
